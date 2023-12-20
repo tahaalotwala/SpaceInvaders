@@ -18,14 +18,14 @@ playerdx = 0;
 
 enemyImg = pygame.image.load('enemy.png');
 enemyY = [];
-enemydy = 40;
+enemydy = 35;
 num_enemies = 5;
 enemyX = [];
 enemydx = [];
 
 for i in range(num_enemies) : 
     enemyX.append(random.randint(0,720));
-    enemydx.append(random.uniform(0.5,0.9));
+    enemydx.append(random.uniform(0.3,0.7));
     enemyY.append(random.randint(50,150));
 
 bulletImg = pygame.image.load('bullet.png');
@@ -81,10 +81,10 @@ while running :
             
         if event.type == pygame.KEYDOWN : 
             if event.key == pygame.K_LEFT or event.key == pygame.K_a: 
-                playerdx = -0.33;
+                playerdx = -0.45;
             if event.key == pygame.K_RIGHT or event.key == pygame.K_d: 
-                playerdx = 0.33;
-            if event.key == pygame.K_SPACE and bullet_state is "ready" : 
+                playerdx = 0.45;
+            if event.key == pygame.K_SPACE and bullet_state == "ready" : 
                 fire_bullet(playerX,bulletY);
                 bulletX = playerX;
         
@@ -129,7 +129,7 @@ while running :
         
         enemy(enemyX[i],enemyY[i],i);
     
-    if bullet_state is 'fire' : 
+    if bullet_state == 'fire' : 
         fire_bullet(bulletX,bulletY);
         bulletY -= bulletdy;
         

@@ -1,33 +1,55 @@
-Space Invaders Game <br>
-This is a simple implementation of the classic Space Invaders game using the Pygame library. Players control a spaceship to shoot down descending alien invaders and earn points. The game features smooth controls, dynamic enemy movements, and a scoring system.<br>
-<br>
-Instructions<br>
-Move Left/Right: A, D keys or Left/Right arrow keys<br>
-Shoot: Spacebar<br>
-<br>
-Getting Started<br>
-<br>
-Prerequisites: Make sure you have Python and Pygame installed on your system.<br>
-pip install pygame<br>
-<br>
-Clone the Repository:<br>
-git clone https://github.com/your-username/space-invaders.git<br>
-cd space-invaders<br>
-<br>
-Run the Game:<br>
-python space_invaders.py<br>
-<br>
-Game Controls<br>
-Left/Right: Move the spaceship left or right.<br>
-Spacebar: Shoot bullets.<br>
-<br>
-Gameplay<br>
-Destroy the alien invaders to earn points.<br>
-Avoid collisions with the invaders.<br>
-The game ends when an invader reaches near the spaceship.<br>
-<br>
-Acknowledgments<br>
-This game was created using Pygame: pygame.org<br>
-<br>
-Author<br>
-Taha Alotwala<br>
+# Space Invaders (Pygame)
+
+A fun arcade-style **Space Invaders** game built using **Python** and **Pygame**. Control your spaceship, shoot incoming enemies, and try to score as high as possible before the game ends!
+
+## Gameplay
+
+- Move the spaceship using:
+
+  - `A` / `D` keys **or**
+  - Left / Right arrow keys
+
+- Press `Spacebar` to fire bullets
+- Score points by shooting down enemies
+- The game ends if any enemy crosses the bottom line
+
+## Features
+
+- Smooth 2D movement and collision detection
+- Multiple enemy ships with randomized positions and speeds
+- Real-time score tracking
+- Game over screen when enemies reach the player zone
+- Custom assets: player, enemies, bullet, and background
+
+## Demo
+
+![Gameplay Screenshot](./screenshots/gameplay.jpg)
+
+## How to Run
+
+### Prerequisites
+
+- Python 3.x
+- `pygame` library
+
+### Installation
+
+Install Pygame using pip if you haven't already:
+
+```bash
+pip install pygame
+```
+
+### Running the Game
+
+```bash
+python main.py
+```
+
+Make sure the following image files are present in the same directory:
+
+- `shuttle.png` (player)
+- `enemy.png` (enemy)
+- `bullet.png` (bullet)
+- `newBg.jpg` (background)
+- `icon.png` (window icon)
